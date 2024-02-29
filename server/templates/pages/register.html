@@ -1,0 +1,35 @@
+{% extends "layout/base.html" %}
+<!--  -->
+{% block title %}Register{% endblock %}
+<!--  -->
+{% block content %}
+<div
+  class="d-flex justify-content-center align-items-center"
+  style="height: 80vh"
+>
+  <form method="post">
+    <h1 class="text-center">Register</h1>
+    <div class="position-relative">
+      <label class="d-block">Username</label>
+      <input type="text" name="username" class="form-control" required />
+    </div>
+    <div class="position-relative">
+      <label class="d-block">Email</label>
+      <input type="email" name="email" class="form-control" required />
+    </div>
+    <div class="position-relative">
+      <label class="d-block">Password</label>
+      <input type="password" name="password" class="form-control" required />
+    </div>
+    <div class="position-relative">
+      <label class="d-block">Confirm Password</label>
+      <input type="password" name="password2" class="form-control" required />
+    </div>
+    <button class="btn btn-sm btn-success float-end my-3" type="submit">
+      submit
+    </button>
+  </form>
+</div>
+
+{% endblock %}
+<!--  -->
