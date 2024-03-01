@@ -11,3 +11,15 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+.content {
+  margin-inline: 80px;
+  padding-block: 100px;
+  min-height: 100vh;
+}
+
+@media (max-width: 576px) {
+  .content {
+    margin-inline: 20px;
+  }
+}

@@ -20,6 +20,7 @@ def create_app():
     app.register_blueprint(auth, url_prefix="/auth/")
 
     from .models.account import User
+    from .models.posts import Posts
 
     with app.app_context():
         create_database(app)

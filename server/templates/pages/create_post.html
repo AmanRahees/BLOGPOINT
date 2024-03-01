@@ -1,0 +1,14 @@
+{% extends "layout/base.html" %}
+<!--  -->
+{% block title %} create post {% endblock %}
+<!--  -->
+
+{% block content %}
+<form method="post">
+  <h1 class="mb-3">Create post</h1>
+  <textarea name="text" rows="5" class="w-100 form-control"></textarea>
+  <button class="btn btn-sm btn-success float-end my-3" type="submit">
+    Submit
+  </button>
+</form>
+{% endblock %}
